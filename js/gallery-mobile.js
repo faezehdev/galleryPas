@@ -152,3 +152,15 @@ gallerys.forEach(g=>{
  }
  
  requestAnimationFrame(raf)
+
+ gallerys.forEach(g=>{
+  gsap.to(g,{
+   opacity:1,
+   y:1,
+   scrollTrigger:{
+    trigger:g,
+    start:'top 70%',
+    end:'end end'
+   }
+  })
+ })
