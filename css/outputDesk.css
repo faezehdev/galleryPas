@@ -687,6 +687,10 @@ video {
   isolation: auto;
 }
 
+.z-\[-1\] {
+  z-index: -1;
+}
+
 .z-\[101\] {
   z-index: 101;
 }
@@ -874,8 +878,20 @@ video {
   height: 17px;
 }
 
+.h-\[182px\] {
+  height: 182px;
+}
+
 .h-\[1px\] {
   height: 1px;
+}
+
+.h-\[506px\] {
+  height: 506px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
@@ -902,12 +918,20 @@ video {
   width: 50px;
 }
 
+.w-\[560px\] {
+  width: 560px;
+}
+
 .w-\[600px\] {
   width: 600px;
 }
 
 .w-\[70\%\] {
   width: 70%;
+}
+
+.w-\[969px\] {
+  width: 969px;
 }
 
 .w-\[this-is\\\\\] {
@@ -937,6 +961,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.max-w-\[1400px\] {
+  max-width: 1400px;
 }
 
 .max-w-\[432px\] {
@@ -994,11 +1022,6 @@ video {
 
 .translate-y-\[-4em\] {
   --tw-translate-y: -4em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[\] {
-  --tw-translate-y: ;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2108,6 +2131,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2698,16 +2725,16 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-150 {
+  transition-duration: 150ms;
+}
+
 .duration-\[\.4s\] {
   transition-duration: .4s;
 }
 
 .duration-\[\.5s\] {
   transition-duration: .5s;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
 }
 
 .ease-in {
@@ -2840,9 +2867,7 @@ video {
 @font-face {
   font-family: "Octin400";
 
-  src: url("../fonts/Octin Stencil Rg.otf")
-    format("otf"),
-    url("../fonts/Octin Stencil Rg.ttf") format("truetype");
+  src:url("../fonts/Octin-Stencil-Rg.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -2978,6 +3003,10 @@ a,ul,li{
   text-align: center;
 }
 
+.group\/gallery.show .group-\[\&\.show\]\/gallery\:pointer-events-auto {
+  pointer-events: auto;
+}
+
 .group\/gallery.show .group-\[\&\.show\]\/gallery\:opacity-\[1\] {
   opacity: 1;
 }
@@ -3006,6 +3035,10 @@ a,ul,li{
 
 .\[\&\.show\]\:pointer-events-auto.show {
   pointer-events: auto;
+}
+
+.\[\&\.show\]\:z-\[101\].show {
+  z-index: 101;
 }
 
 .\[\&\.show\]\:opacity-\[1\].show {

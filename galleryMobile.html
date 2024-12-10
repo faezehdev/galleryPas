@@ -5,93 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="gallery">
     <title>gallery</title>
+    <link rel="stylesheet" href="/css/swiper.css">
     <link rel="stylesheet" href="/css/outputDesk.css">
 </head>
 <body class="bg-black">
     <main class="Gallery-container w-full flex flex-col pt-[5em]">
-        <header>
-            <div class="Top w-full flex justify-center items-center">
-                <div class="LogoBox w-auto flex flex-col">
-                    <div class="T-logo w-auto flex justify-center items-center">
-                        <img src="/images/Frame 1000005502.png" alt="logo" title="logo">
-                    </div>
-                    <div class="B-logo my-[1em] w-[600px] flex flex-col justify-center items-center">
-                        <span class="line w-full gap-3 grid grid-cols-[3fr,1fr,2fr,.5fr]" dir="rtl">
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                        </span>
-                        <div class="title my-[2em] w-full flex flex-col gap-2">
-                            <h2 class="font-YekanBakh400 text-center font-normal text-base text-gray tracking-[23%]">
-                                Path Is Under Construction
-                            </h2>
-                            <h1 class="font-Octin400 text-center font-normal text-2xl leading-28.8 tracking-[65%] text-mainGreen">
-                                COMING SOON
-                            </h1>
-                        </div>
-                        <span class="line w-full gap-3 grid grid-cols-[3fr,1fr,2fr,.5fr]" dir="rtl">
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                            <span class="lr w-full h-[1px] bg-mainGreen"></span>
-                        </span>
-                    </div>
-    
+        <div class="Top w-full flex justify-center items-center">
+            <div class="LogoBox w-full flex flex-col">
+                <div class="T-logo w-auto flex justify-center items-center">
+                    <img src="/images/logoMobile.png" alt="logo" title="logo">
                 </div>
+                <div class="B-logo my-[1em] w-90p mx-auto flex flex-col justify-center items-center">
+                    <span class="line w-full gap-3 grid grid-cols-[3fr,1fr,2fr,.5fr]" dir="rtl">
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                    </span>
+                    <div class="title my-[2em] w-full flex flex-col gap-2">
+                        <h2 class="font-Blinker300 text-center font-normal text-sm text-gray leading-[16.8px]
+                         tracking-[26%]">
+                            Path Is Under Construction
+                        </h2>
+                        <h1 class="font-Octin400 text-center font-normal text-2xl leading-28.8 tracking-[56%] text-mainGreen">
+                            COMING SOON
+                        </h1>
+                    </div>
+                    <span class="line w-full gap-3 grid grid-cols-[3fr,1fr,2fr,.5fr]" dir="rtl">
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                        <span class="lr w-full h-[1px] bg-mainGreen"></span>
+                    </span>
+                </div>
+
             </div>
-        </header>
-        <div class="Gallerys cursor-none w-90p grid grid-cols-[1fr,1fr,1fr]  py-[3em]
-        mx-auto gap-[5em] 2xl:grid-cols-[1fr,1fr,1fr,1fr] relative">
+        </div>
+        <div class="Gallerys cursor-none w-90p flex flex-col pb-[3em] pt-[1em]
+        mx-auto gap-[1em] relative">
         <div class="Cursor-follower w-[14px] h-[14px] flex justify-center items-center bg-White">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.71228 4.50897H5.49108V1.29104C5.49108 1.01933 5.27176 0.800003 5.00005 0.800003C4.72834 0.800003 4.50901 1.01933 4.50901 1.29104V4.50897H1.29108C1.01938 4.50897 0.800049 4.7283 0.800049 5C0.800049 5.27171 1.01938 5.49104 1.29108 5.49104H4.50901V8.70897C4.50901 8.98067 4.72834 9.2 5.00005 9.2C5.27176 9.2 5.49108 8.98067 5.49108 8.70897V5.49104H8.70901C8.98072 5.49104 9.20005 5.27171 9.20005 5C9.20005 4.7283 8.98399 4.50897 8.71228 4.50897Z" fill="black"/>
                 </svg>
                 
         </div>
-            <div class="gallery-img opacity-0
-             translate-y-[3em] duration-150 w-full max-w-[432px] flex justify-center items-center" data-bg="images/1.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/1.png" alt="" class="w-full object-cover">
             </div>
-            <div class="gallery-img w-full opacity-0 translate-y-[3em] duration-150 
-             max-w-[432px] flex justify-center items-center" data-bg="images/2.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/2.png" alt=""  class="w-full object-cover">
             </div>
-            <div class="gallery-img w-full opacity-0 translate-y-[3em] duration-150 
-             max-w-[432px] flex justify-center items-center" data-bg="images/3.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/3.png" alt="" class="w-full object-cover">
             </div>
-            <div class="gallery-img w-full opacity-0 translate-y-[3em]
-             duration-150  max-w-[432px] flex justify-center items-center" data-bg="images/4.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/4.png" alt="" class="w-full object-cover">
             </div>
-            <div class="gallery-img w-full opacity-0 translate-y-[3em] duration-150 
-             max-w-[432px] flex justify-center items-center" data-bg="images/5.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/5.png" alt="" class="w-full object-cover">
             </div>
-            <div class="gallery-img w-full opacity-0 translate-y-[3em] 
-            duration-150  max-w-[432px] flex justify-center items-center" data-bg="images/6.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/6.png" alt="" class="w-full object-cover">
             </div>
-            <div class="gallery-img w-full opacity-0 translate-y-[3em]
-             duration-150  max-w-[432px] flex justify-center items-center" data-bg="images/7.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/7.png" alt="" class="w-full object-cover">
             </div>
-            <div class="gallery-img w-full opacity-0 translate-y-[3em]
-             duration-150  max-w-[432px] flex justify-center items-center" data-bg="images/8.png">
+            <div class="gallery-img opacity-0 translate-y-[3em] duration-150 w-full flex justify-center items-center">
                 <img src="images/8.png" alt="" class="w-full object-cover">
             </div>
         </div>
-        <footer class="DesktopFooter w-full flex justify-center items-center"  dir="rtl">
+        <footer class="MobileFooter w-full flex justify-center items-center"  dir="rtl">
            <div class="innerFooter mx-auto w-90p flex flex-col">
-            <span class="line w-full gap-1 grid grid-cols-[10fr,1fr,2fr,.5fr]" dir="rtl">
-                <span class="lr w-full h-[17px] bg-mainGreen"></span>
-                <span class="lr w-full h-[17px] bg-mainGreen"></span>
-                <span class="lr w-full h-[17px] bg-mainGreen"></span>
-                <span class="lr w-full h-[17px] bg-mainGreen"></span>
-            </span>
-            <div class="detail py-[2em] w-full flex justify-start items-center gap-[5em]">
+            <div class="logo w-full flex justify-center items-center">
+                <img src="/images/footermobile-logo.png" alt="">
+              </div>
+            <div class="detail border-b-[1px] border-mainGreen py-[1em] w-full flex-col flex justify-start items-center gap-[1em]">
+                <span class="row w-auto flex justify-center items-center">
+                    <a href="" class="email w-auto flex justify-center items-center gap-2">
+                       <span class="font-Blinker400 font-light text-sm leading-16.41 text-White tracking-[4%] flex justify-center items-center">
+                        @patharchitectsoffice@gmail.com
+                       </span>
+                       <span class="flex justify-center items-cente">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5972 3.91161H8.02558L4.54351 0.452271L0.597168 4.37095L5.71437 9.45227H12.5972V3.91161Z" fill="white"/>
+                            </svg>
+                            
+                       </span>
+                    </a>
+                </span>
+                <span class="row w-auto flex justify-start items-center">
+                    <a href="" class="phone w-auto flex justify-center items-center gap-2">
+                       <span class="font-Blinker400 font-light text-sm leading-16.41 text-White tracking-[4%] flex justify-center items-cente">
+                        +9821 22746201
+                       </span>
+                       <span class="flex justify-center items-cente">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5972 3.91161H8.02558L4.54351 0.452271L0.597168 4.37095L5.71437 9.45227H12.5972V3.91161Z" fill="white"/>
+                            </svg>
+                            
+                       </span>
+                    </a>
+                </span>
                 <span class="socials w-auto flex justify-center items-center gap-3">
+
                     <a href="" class="social-item telegram">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5179 9.10383C16.4268 9.14008 16.3405 9.1875 16.261 9.24502C15.6787 9.78408 15.1028 10.3317 14.5226 10.8751L8.67808 16.3577L3.55713 14.471L19.6136 5.43518C18.7765 10.1413 17.948 14.7769 17.1131 19.4638C15.8864 19.0359 14.6896 18.5653 13.4544 18.1289L10.5749 21.4917C10.5749 20.3836 10.5749 19.3525 10.5749 18.3236C10.5749 17.8958 10.5899 17.4679 10.5963 17.0572C10.8404 16.7256 11.0801 16.3941 11.3242 16.0646C13.0369 13.7829 14.7446 11.4926 16.4473 9.19368C16.4687 9.16373 16.4858 9.12736 16.5072 9.09528L16.5222 9.0803C16.5244 9.05891 16.5222 9.08458 16.5179 9.10383Z" fill="white"/>
@@ -119,44 +135,16 @@
                             
                     </a>
                 </span>
-                <span class="row w-auto flex justify-center items-center">
-                    <a href="" class="email w-auto flex justify-center items-center gap-2">
-                       <span class="font-Blinker400 font-light text-sm leading-16.41 text-White tracking-[4%] flex justify-center items-center">
-                        @patharchitectsoffice@gmail.com
-                       </span>
-                       <span class="flex justify-center items-cente">
-                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5972 3.91161H8.02558L4.54351 0.452271L0.597168 4.37095L5.71437 9.45227H12.5972V3.91161Z" fill="white"/>
-                            </svg>
-                            
-                       </span>
-                    </a>
-                </span>
-                <span class="row w-auto flex justify-start items-center">
-                    <a href="" class="phone w-auto flex justify-center items-center gap-2">
-                       <span class="font-Blinker400 font-light text-sm leading-16.41 text-White tracking-[4%] flex justify-center items-cente">
-                        +9821 22746201
-                       </span>
-                       <span class="flex justify-center items-cente">
-                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5972 3.91161H8.02558L4.54351 0.452271L0.597168 4.37095L5.71437 9.45227H12.5972V3.91161Z" fill="white"/>
-                            </svg>
-                            
-                       </span>
-                    </a>
-                </span>
+              
             </div>
-            <span class="line w-full gap-1 flex" dir="rtl">
-                <span class="lr w-full h-[17px] bg-mainGreen"></span>
-                <img src="images/footerbg.png" alt="" class="w-max translate-y-[-29%]">
-            </span>
-            <div class="copyRight w-full flex translate-y-[-4em]">
+          
+            <div class="copyRight w-full flex py-[1em] justify-center items-center ">
                 <a href="" class="w-auto flex justify-start items-start gap-2">
                     <span class="font-Blinker400 font-normal text-xs leading-[27.45px] text-gray2">
                         Site design and site optimization
                     </span>
                     <span>
-<img src="images/Namasite- 1.png" alt="">
+                     <img src="images/Namasite- 1.png" alt="">
                     </span>
                 </a>
             </div>
@@ -164,7 +152,7 @@
         </footer>
     </main>
     <div class="Gallerypopup group/gallery w-screen h-screen flex bg-[#000000e4]
-    justify-center items-center z-[101] pointer-events-none opacity-0 duration-[.4s] ease-in
+    justify-center items-center [&.show]:z-[101] z-[-1] pointer-events-none opacity-0 duration-[.4s] ease-in
     [&.show]:opacity-[1] [&.show]:pointer-events-auto fixed top-0 left-0">
   
 
@@ -181,26 +169,50 @@
             </div>
         </div>
         <div class="popUp w-full flex justify-center items-center">
-            <div class="galleryInner group-[&.show]/gallery:opacity-[1] duration-[.4s] ease-in 
-            flex  w-[70%] mx-auto justify-between items-center opacity-0 relative my-auto">
-                <span class="Gprev hover:cursor-pointer">
-                    <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="5.04907" height="18.7977" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 16.8911 4.18317)" fill="white"/>
-                        <rect width="4.91516" height="11.2475" transform="matrix(-0.707107 0.707107 0.707107 0.707107 9.03711 15.5713)" fill="white"/>
-                        </svg>
-                        
-                </span>
-            
-             <img class="Main opacity-0 object-cover duration-[.5s] [&.active]:opacity-[1]
-             w-full max-h-[506px] max-w-[969px] mx-auto" src="@largeIMG" alt="@title" title="@title" />
-             <span class="Gnext hover:cursor-pointer">
-                <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.108887" y="4.18317" width="5.04907" height="18.7977" transform="rotate(-45 0.108887 4.18317)" fill="white"/>
-                    <rect x="7.96289" y="15.5713" width="4.91516" height="11.2475" transform="rotate(45 7.96289 15.5713)" fill="white"/>
-                    </svg>
-                    
-             </span>
-               
+            <div class="galleryInner w-90p group-[&.show]/gallery:opacity-[1] duration-[.4s] ease-in 
+            flex  mx-auto justify-between items-center opacity-0 relative my-auto">
+  
+            <div class="swiper-gallery w-90p h-[182px] mx-auto overflow-hidden">
+                <div class="swiper-wrapper w-full">
+                    <div class="swiper-slide">
+                        <img class=" h-full object-cover duration-[.5s]
+                        w-full" src="images/1.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="  h-full object-cover duration-[.5s]
+                        w-full  mx-auto" src="images/2.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class=" h-full  object-cover duration-[.5s]
+                        w-full mx-auto" src="images/3.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="  h-full object-cover duration-[.5s]
+                        w-full  mx-auto" src="images/4.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="  h-full object-cover duration-[.5s]
+                        w-full mx-auto" src="images/5.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="  h-full object-cover duration-[.5s]
+                        w-full  mx-auto" src="images/6.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="  h-full object-cover duration-[.5s]
+                        w-full mx-auto" src="images/7.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="  h-full object-cover duration-[.5s]
+                        w-full  mx-auto" src="images/8.png" alt="@title" title="@title" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="  h-full object-cover duration-[.5s]
+                        w-full mx-auto" src="images/9.png" alt="@title" title="@title" />
+                    </div>
+                </div>
+            </div>
+          
             </div>
         </div>
     
@@ -210,6 +222,7 @@
     <script src="/js/imageLoaded.js"></script>
     <script src="/js/scrollTrigger.js"></script>
     <script src="/js/lenisScroll.js"></script>
-    <script src="/js/gallery.js"></script>
+    <script src="/js/swiper-bundle.8.4.7.min.js"></script>
+    <script src="/js/galleryMobileSwiper.js"></script>
 </body>
 </html>

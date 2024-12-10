@@ -1,5 +1,10 @@
 
-// CUSOR FOLLOWER
+
+$('.Gallery-container').imagesLoaded( {
+
+},  function() {
+  $(document).ready(function() {
+    // CUSOR FOLLOWER
 
     follower = $(".Cursor-follower");
 let posX = 0,
@@ -50,7 +55,7 @@ gallerys.forEach(g=>{
          console.log('clicked',clickedIMG);
         let popup = document.querySelector('.Gallerypopup')
         popup.classList.add('show')
-        let MimgSCR = e.currentTarget.querySelector('img').getAttribute('src')
+        let MimgSCR = e.currentTarget.getAttribute('data-bg')
       
         console.log(MimgSCR);
         let mainIMG = document.querySelector('img.Main')
@@ -68,14 +73,15 @@ gallerys.forEach(g=>{
         let newIndex = clickedIMG 
         function preview(){
             let i = clickedIMG
-            let selectedIMGurl = gallerys[newIndex].querySelector('img') //get user clicked img url
+            let selectedIMGurl = gallerys[newIndex].getAttribute('data-bg')//get user clicked img url
             console.log('sel',gallerys[i],i);
             console.log('indec',newIndex);
             previewIMG.classList.remove('active')
+          
             setTimeout(()=>{
-                previewIMG.setAttribute('src',selectedIMGurl.getAttribute('src'))
+              previewIMG.setAttribute('src',selectedIMGurl)
                 previewIMG.classList.add('active')
-            },200)
+            },500)
             }
       // previos next btn
       let nextBtn = document.querySelector('.Gnext')
@@ -133,3 +139,7 @@ gallerys.forEach(g=>{
    }
   })
  })
+
+  }
+)
+})
